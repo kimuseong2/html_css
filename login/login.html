@@ -22,41 +22,42 @@
                     <ul>
                         <li class="joinList">
                             <label for="id">아이디&nbsp;&nbsp;&nbsp;</label>
-                            <div>
-                            <input type="text" name="id" class="infomation">
+                            <div class="user">
+                            <input type="text" name="id" id="id" class="infomation" value="test0103">
                             <button class="joinButton">중복확인</button>
+                            <p class="idChk">이미 등록되어있는 아이디 입니다.</p>
                             </div>
                         </li>
                         <li class="joinList">
                             <label for="password">비밀번호</label>
-                            <div>
-                            <input type="password" name="password" class="infomation">
+                            <div class="user">
+                            <input type="password" name="password" id="password" class="infomation pwd">
                             <p class="infopwd">영문,숫자,특수문자를 포함하여 8~20글자 이내로 작성해주세요.</p>
                             </div>
                         </li>
                         <li class="joinList">
                             <label for="passwordChk">비밀번호 확인</label>
-                            <div>
-                            <input type="password" id="passwordChk" class="infomation">
+                            <div class="user">
+                            <input type="password" id="passwordChk" name="passwordChk" class="infomation pwdCk">
                             <p class="infopwd">비밀번호 확인을 위해 다시한번 입력해주세요.</p>
                             </div>
                         </li>
                         <li class="joinList">
                             <label for="name">이름</label>
-                            <div>
-                            <input type="text" id="name" class="infomation">
+                            <div class="user">
+                            <input type="text" id="name" name="name" class="infomation name">
                             </div>
                         </li>
                         <li class="joinList">
                             <label for="birthDay">생년월일</label>
-                            <div>
-                            <input type="text" id="birthDay" class="infomation">
+                            <div class="user">
+                            <input type="text" id="birthDay"  name="birthDay" class="infomation birth" placeholder="YYYY     /   MM    /   DD">
                             </div>
                         </li>
                         <li class="joinList">
                             <label for="phone">휴대폰</label>
-                            <div>
-                            <input type="text" id="phone" class="infomation">
+                            <div class="user">
+                            <input type="text" id="phone" name="phone" class="infomation">
                             <button  class="joinButton">인증번호 받기</button>
                             </div>
                         </li>
@@ -67,32 +68,47 @@
             
 
             <div class="agree">
-                <label for="allAgree">전체동의</label>
-                <input type="checkbox" class="input" name="allAgree">
+                <label for="allAgree" class="agreeAll">전체동의</label>
+                <input type="checkbox" class="input" name="allAgree" id="allAgree">
             </div>
-            <div>
+            <div class="checkbox">
                 <label for="agreeUse">이용약관 동의</label>
-                <a>자세히 보기</a>
-                <input type="checkbox" class="input" name="agreeUse">
+                <div>
+                    <a class="detail">자세히 보기</a>
+                    <input type="checkbox" class="input" name="agreeUse" id="agreeUse">
+                </div>
             </div>
-            <div>
-                <hr>
+            <hr>
+            <div class="checkbox">
+                
                 <label for="agreeinfo">개인정보취급방침 동의</label>
-                <a>자세히 보기</a>
-                <input type="checkbox" class="input" name="agreeinfo">
+                <div>
+                    <a class="detail">자세히 보기</a>
+                    <input type="checkbox" class="input" name="agreeinfo" id="agreeinfo">
+                </div>
             </div>
-            <div>
-                <hr>
-                <label for="infoCheck">정보수신 동의</label>
-                <input type="checkbox" class="input" name="infoCheck">
-                <input type="checkbox" class="input">SMS
-                <input type="checkbox" class="input">이메일
-                <p>주문 진행상태,배송정보 등의 정보를 수신 받을 수 있습니다.</p>
+            <hr>
+            <div class="receive">
+                
+                <div>
+                    <label for="infoCheck">정보수신 동의</label>
+                    <input type="checkbox" class="input" name="infoCheck" id="infoCheck">
+                </div>
+                <div class="userSMS">
+                    <input type="checkbox" class="input" id="SMS" name="SMS">
+                    <label for="SMS">SMS</label>
+                
+                
+                    <input type="checkbox" class="input" name="emailChk" id="emailChk">
+                    <label for="emailChk">이메일</label>
+                </div>
+                <p class="orderInfo">-주문 진행상태,배송정보 등의 정보를 수신 받을 수 있습니다.</p>
             </div>
-            <div>
-                <hr>
+            <hr>
+            <div class="checkbox">
+                
                 <label for="agreeforteen">만 14세 이상입니다.</label>
-                <input type="checkbox" name="agreeforteen">
+                <input type="checkbox" name="agreeforteen" id="agreeforteen">
             </div>
             <button type="button" class="join">가입하기</button>
             

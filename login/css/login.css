@@ -41,24 +41,39 @@ ul {
     padding-bottom: 20px;
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 .joinButton {
     height: 40px;
+    width: 27%;
+    color: #3493E5;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid;
 }
 label {
-    margin-right: 60px;
+    margin-right: 20px;
 }
-div {
+.user {
     height: 80px;
+    width: 333px;
 }
 .agree{
-    width: 100%;
-    display: table;
-    border: 1px solid;
-    table-layout: fixed;
     text-align: center;
-    
+    border: 2px solid;
+    width: 100%;
+    height: 40px;
+    padding-top: 15px;
 }
+.checkbox {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
 .agree > p {
     display: inline;
 }
@@ -89,6 +104,20 @@ footer > span {
         height: 40px;
         box-shadow: none;
         outline: none;
+        width: 66%;
+        padding-left: 13px;
+}
+.infomation.pwd  {
+    width: 95%;
+}
+.infomation.pwdCk {
+    width: 95%;
+}
+.infomation.birth {
+    width: 95%;
+}
+.infomation.name {
+    width: 95%;
 }
 
 .join {
@@ -97,7 +126,53 @@ footer > span {
     background: linear-gradient(to right, #3493E5, #EC6EAD);
     border-radius: 30px;
     border: 0ch;
+    margin: 35px 0 0 0;
 }
 .infopwd {
     font-size: 11px;
 }
+.idChk {
+    font-size: 11px;
+    color: #ff6565;
+    padding-top: 10px;
+}
+#id {
+    border:1px solid #ff6565;
+}
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid #999;
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    background-color: #C4C4C4;
+    float: right;
+    margin-right: 20px;
+  }
+
+  input[type="checkbox"]:checked {
+    background: #000000;
+    border: none;
+  }
+  .orderInfo {
+      font-size: 11px;
+      color: #3493E5;
+  }
+  .allAgree {
+    margin: 0 auto;
+  }
+  .receive {
+    padding: 20px 0 20px 0;
+  }
+  .userSMS{
+    display: flex;
+    padding: 20px;
+  }
+  .detail {
+    margin: 0 15px 0 0;
+    font-size: 11px;
+    color: #C4C4C4;
+    font-weight: 900;
+  }
