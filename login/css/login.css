@@ -1,11 +1,16 @@
-* {margin: 0; padding: 0;}
+* {margin: 0; padding: 0; font-family: 'NotoSansKR';}
 
+
+
+
+}
 header {
     margin-bottom: 10%;
     padding: 5% 5% 0;
 }
 header > strong >  a {
-    font-size: 53px;
+    font-size: 40px;
+    
 }
 header > nav {
     float: right;
@@ -50,6 +55,7 @@ ul {
     background-color: transparent;
     border-radius: 5px;
     border: 2px solid;
+   
 }
 label {
     margin-right: 20px;
@@ -127,6 +133,7 @@ footer > span {
     border-radius: 30px;
     border: 0ch;
     margin: 35px 0 0 0;
+    color: white;
 }
 .infopwd {
     font-size: 11px;
@@ -176,3 +183,45 @@ input[type="checkbox"] {
     color: #C4C4C4;
     font-weight: 900;
   }
+
+  /* ----------- font -------------------- */
+  @font-face {
+    font-family: 'BMDOHYEON';
+    src: url(../font/BMDOHYEON_ttf.woff);
+  }
+
+  @font-face {
+    font-family: 'themefisher-font';
+    src:  url('../font/themefisher-font.eot?ug5hnh');
+    src:  url('../font/themefisher-font.eot?ug5hnh#iefix') format('embedded-opentype'),
+      url('../font/themefisher-font.ttf?ug5hnh') format('truetype'),
+      url('../font/themefisher-font.woff?ug5hnh') format('woff'),
+      url('../font/themefisher-font.svg?ug5hnh#themefisher-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'NotoSansKR';
+      src: url("../font/NotoSansKR-Medium.otf");
+  }
+
+   /* @media */
+
+   @media (max-width: 450px){
+       body {
+            width: 420px;
+       }
+       section {
+            padding: 10% 0 0 0;
+       }
+       form{
+            width: 85%;
+       }
+       .user {
+            width: 250px;
+       }
+       .joinButton{
+            width: 25%;
+       }
+   }
