@@ -1,9 +1,6 @@
 * {margin: 0; padding: 0; font-family: 'NotoSansKR';}
 
 
-
-
-}
 header {
     margin-bottom: 10%;
     padding: 5% 5% 0;
@@ -55,8 +52,10 @@ ul {
     background-color: transparent;
     border-radius: 5px;
     border: 2px solid;
+    transition: all .15s linear;
    
 }
+
 label {
     margin-right: 20px;
 }
@@ -115,15 +114,19 @@ footer > span {
 }
 .infomation.pwd  {
     width: 95%;
+    transition: all .15s linear;
 }
 .infomation.pwdCk {
     width: 95%;
+    transition: all .15s linear;
 }
 .infomation.birth {
     width: 95%;
+    transition: all .15s linear;
 }
 .infomation.name {
     width: 95%;
+    transition: all .15s linear;
 }
 
 .join {
@@ -134,7 +137,12 @@ footer > span {
     border: 0ch;
     margin: 35px 0 0 0;
     color: white;
+    /* text-decoration: none;
+    text-transform: uppercase; */
+    transition: all .30s ease-out;
 }
+
+
 .infopwd {
     font-size: 11px;
 }
@@ -206,6 +214,32 @@ input[type="checkbox"] {
       src: url("../font/NotoSansKR-Medium.otf");
   }
 
+  /* hover */
+  .join:hover {
+    background: #3493E5;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+    color: #C4C4C4;
+    text-shadow: -1px -1px 0 #3493E5;
+}
+.joinButton:hover {
+    border-color: #ff6565;
+    color: #ff6565;
+}
+input[type="text"]:hover {
+    box-shadow: 0 0 10px #9ecaed;
+}
+input[type="password"]:hover {
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+ /* focus */
+input[type="text"]:focus {
+    box-shadow: 0 0 10px #9ecaed;
+}
+input[type="password"]:focus {
+    box-shadow: 0 0 10px #9ecaed;
+}
    /* @media */
 
    @media (max-width: 450px){
