@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
         <strong><a>SINSA BRIDGE</a></strong> 
         <nav>
-            <button>MENU</button> 
+            <button class="menu">MENU</button> 
         </nav>
     </header>
     <section>
@@ -51,7 +53,7 @@
                         <li class="joinList">
                             <label for="birthDay">생년월일</label>
                             <div class="user">
-                            <input type="text" id="birthDay"  name="birthDay" class="infomation birth" placeholder="YYYY     /   MM    /   DD">
+                            <input type="text" id="birthDay"  name="birthDay" class="infomation birth" placeholder="   YYYY     /   MM    /   DD" style="text-align: center;">
                             </div>
                         </li>
                         <li class="joinList">
@@ -117,4 +119,19 @@
     
     <footer><strong><b>SINSA BRIDGE</b></strong>  <span>Copyright 2022. sinsa bridge all right reserved</span> </footer>
 </body>
+<script>
+    $('#infoCheck').click(function() {
+        var checked = $('#infoCheck').is(':checked');
+    
+        if(checked) {
+            $('input:checkbox[name="SMS"]').prop('checked',true);
+            $('input:checkbox[name="emailChk"]').prop('checked',true);
+        }
+        if(!checked) {
+            $('input:checkbox[name="SMS"]').prop('checked',false);
+            $('input:checkbox[name="emailChk"]').prop('checked',false);
+        }
+
+    })
+    </script>
 </html>
